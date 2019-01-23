@@ -4,5 +4,11 @@ def reformat_languages(languages)
     language.each do |name, data|
       data.each do |key, value|
         if reformatted.key?(name) == FALSE
-          reformatted[name] 
+          reformatted[name] = {name => value, :style => [type]}
+        else
+          reformatted[name][:style] << type
+        end
+      end
+    end
+  end
 end
