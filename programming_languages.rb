@@ -7,7 +7,6 @@ def reformat_languages(languages)
         reformatted[language] == data
       end
       reformatted[name][:style] << style
-      end
     end
   end
 end
