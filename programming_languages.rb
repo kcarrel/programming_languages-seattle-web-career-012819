@@ -7,5 +7,6 @@ def reformat_languages(languages)
     reformatted[name][:style] << type
     end
   end
+  
   reformatted
 end
